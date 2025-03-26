@@ -48,6 +48,8 @@ import {BluWinged120Spec} from "@xivgear/core/sims/blu/blu_winged120";
 import {BluWinged60Spec} from "@xivgear/core/sims/blu/blu_winged60";
 import {potRatioSimSpec} from "@xivgear/core/sims/common/potency_ratio";
 import {mpSimSpec} from "@xivgear/core/sims/healer/healer_mp";
+import {brd248SimSpec} from "@xivgear/core/sims/ranged/brd/brd_248_sim";
+import {brd250SimSpec} from "@xivgear/core/sims/ranged/brd/brd_250_sim";
 
 
 type SimGuiCtor<X extends Simulation<SimResult, unknown, unknown>> = {
@@ -99,6 +101,8 @@ registerGui(mnkSpec, MnkSimGui);
 registerGui(samSpec, SamSimGui);
 // Ranged
 registerGui(dncDtSheetSpec, BaseUsageCountSimGui);
+registerGui(brd248SimSpec, PotencyRatioSimGui);
+registerGui(brd250SimSpec, PotencyRatioSimGui);
 // Caster
 registerGui(BluWinged120Spec, BluSimGui);
 registerGui(BluFlame120Spec, BluSimGui);
