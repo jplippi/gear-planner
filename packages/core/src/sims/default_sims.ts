@@ -27,6 +27,8 @@ import {gnbSpec} from "./tank/gnb/gnb_sheet_sim";
 import {pldSpec} from "./tank/pld/pld_sheet_sim";
 import {blmSpec} from "./caster/blm/blm_sheet_sim";
 import {drgSpec} from "./melee/drg/drg_sim";
+import {brd248SimSpec} from "./ranged/brd/brd_248_sim";
+import {brd250SimSpec} from "./ranged/brd/brd_250_sim";
 
 let registrationDone = false;
 
@@ -64,6 +66,8 @@ export function registerDefaultSims() {
     registerSim(samSpec);
     // Ranged
     registerSim(dncDtSheetSpec);
+    registerSim(brd248SimSpec);
+    registerSim(brd250SimSpec);
     // Caster
     registerSim(blmSpec);
     registerSim(BluWinged120Spec);

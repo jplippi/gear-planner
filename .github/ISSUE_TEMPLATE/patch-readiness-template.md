@@ -15,4 +15,3 @@ Manual:
 - [ ] Update sims with new potencies and other job mechanics
 - [ ] Add new potions
 - [ ] If relics were added, verify/update relic model selection
-- [ ] If needed, update default displayed ilvl range for items and food
