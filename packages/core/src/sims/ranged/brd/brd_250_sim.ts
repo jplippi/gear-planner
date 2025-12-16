@@ -1,6 +1,6 @@
 import {CharacterGearSet} from "../../../gear";
 import {SimResult, SimSettings, SimSpec, Simulation} from "../../sim_types";
-import {EmptyObject} from "@xivgear/util/types";
+import {EmptyObject} from "@xivgear/util/util_types";
 
 export const brd250SimSpec: SimSpec<Brd250Sim, SimSettings> = {
     displayName: "BRD @ 2.50",
@@ -33,16 +33,16 @@ export class Brd250Sim implements Simulation<Brd250SimResult, SimSettings, Empty
 
     async simulate(set: CharacterGearSet): Promise<Brd250SimResult> {
 
-        const partyBuffs = 1.16865;
-        const partyCritBuffs = 0.05;
+        const partyBuffs = 1.157625;
+        const partyCritBuffs = 0.1;
 
         let cycleLength = 120;
         if (set.computedStats.skillspeed < 442) {
             cycleLength = 120.15;
         }
         const wmNoBVPotency = 4183;
-        const wmBVPotency = 9465;
-        const mbPotency = 8403;
+        const wmBVPotency = 9765;
+        const mbPotency = 8598;
         const apPotency = 6205;
 
         const wmNoBVSksImpactedPotency = 533;
